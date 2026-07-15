@@ -131,19 +131,13 @@
             synthesis quality. Concurrently, Video Foundation Models (VFMs) such as V-JEPA 2 and VideoMAEv2 have
             demonstrated exceptional semantic understanding capabilities. Yet, whether such frozen video foundation
             representations can be transformed into compact, reconstruction-capable, and generation-friendly video
-            latents remains largely unexplored.
-          </p>
-          <p>
-            In this work, we answer this question affirmatively with VideoRAE. VideoRAE
+            latents remains largely unexplored. In this work, we answer this question affirmatively with VideoRAE. VideoRAE
             leverages multi-scale hierarchical features from a frozen video foundation encoder and employs a
             lightweight 1D self-attention projector to compress them into a highly compact latent space. The resulting
             latents support both continuous representations for Diffusion Transformers (DiTs) and discrete
             representations for autoregressive models via multi-codebook high-dimensional quantization. During decoding,
             VideoRAE incorporates a local-and-global representation alignment objective with the frozen VFM teacher,
-            which improves semantic preservation and enables training without KL regularization.
-          </p>
-          <p>
-            Comprehensive experiments show that VideoRAE achieves strong reconstruction in both continuous and
+            which improves semantic preservation and enables training without KL regularization. Comprehensive experiments show that VideoRAE achieves strong reconstruction in both continuous and
             discrete regimes. On UCF-101, it achieves state-of-the-art class-to-video gFVDs of 40 and 93 with AR and
             DiT generators, respectively, while converging approximately 5&times; faster than competing autoencoder
             baselines. In a controlled 2B-scale text-to-video experiment, replacing LTX-VAE with VideoRAE leads to
