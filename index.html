@@ -119,6 +119,46 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rapid advancement of video generative modeling has been largely driven by
+            diffusion and autoregressive models operating in the latent spaces of 3D Variational Autoencoders (3D-VAEs).
+            However, conventional 3D-VAEs are mainly optimized for pixel-level reconstruction, and this objective often
+            limits the semantic and spatio-temporal structure captured by their latent spaces, constraining downstream
+            synthesis quality. Concurrently, Video Foundation Models (VFMs) such as V-JEPA 2 and VideoMAEv2 have
+            demonstrated exceptional semantic understanding capabilities. Yet, whether such frozen video foundation
+            representations can be transformed into compact, reconstruction-capable, and generation-friendly video
+            latents remains largely unexplored.
+          </p>
+          <p>
+            In this work, we answer this question affirmatively with VideoRAE. VideoRAE
+            leverages multi-scale hierarchical features from a frozen video foundation encoder and employs a
+            lightweight 1D self-attention projector to compress them into a highly compact latent space. The resulting
+            latents support both continuous representations for Diffusion Transformers (DiTs) and discrete
+            representations for autoregressive models via multi-codebook high-dimensional quantization. During decoding,
+            VideoRAE incorporates a local-and-global representation alignment objective with the frozen VFM teacher,
+            which improves semantic preservation and enables training without KL regularization.
+          </p>
+          <p>
+            Comprehensive experiments show that VideoRAE achieves strong reconstruction in both continuous and
+            discrete regimes. On UCF-101, it achieves state-of-the-art class-to-video gFVDs of 40 and 93 with AR and
+            DiT generators, respectively, while converging approximately 5&times; faster than competing autoencoder
+            baselines. In a controlled 2B-scale text-to-video experiment, replacing LTX-VAE with VideoRAE leads to
+            faster convergence and consistently better VBench performance. These results validate frozen VFM
+            representations as versatile and generation-friendly video latents. The model and code will be released.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Training Convergence</h2>
