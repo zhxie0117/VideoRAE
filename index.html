@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders">
+  <meta name="keywords" content="VideoRAE, Representation Autoencoders, Video Foundation Models, Video Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VideoRAE</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://zhxie0117.github.io/VideoRAE/">
+      <b>VideoRAE</b>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://wjf5203.github.io/TokBench/home_page.html">
+            TokBench
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Zhihao Xie<sup>1,2,*</sup>,</span>
+            <span class="author-block">Junfeng Wu<sup>2,*</sup>,</span>
+            <span class="author-block">Xinting Hu<sup>4</sup>,</span>
+            <span class="author-block">Junchao Huang<sup>1,3</sup>,</span>
+            <span class="author-block">Li Jiang<sup>1,3,&#8224;</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong, Shenzhen,</span>
+            <span class="author-block"><sup>2</sup>Huazhong University of Science and Technology,</span>
+            <span class="author-block"><sup>3</sup>Shenzhen Loop Area Institute,</span>
+            <span class="author-block"><sup>4</sup>University of Science and Technology of China</span>
+          </div>
+          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block"><sup>*</sup>Equal contribution.</span>
+            <span class="author-block"><sup>&#8224;</sup>Corresponding author.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://github.com/zhxie0117/VideoRAE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png" alt="Overall architecture of VideoRAE." style="width:100%; height:auto;"/>
+      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        <b>Overall architecture of VideoRAE.</b>
+        A frozen VFM extracts multi-scale features, a 1D projector compresses them into compact latents
+        (continuous or discrete), and the decoder is trained with reconstruction and REPA alignment.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Training Convergence</h2>
+        <div class="content has-text-justified">
+          <p>
+            Training convergence speed comparison in AR (left) and DiT (right) generative modeling.
+            VideoRAE converges approximately <b>5&times;</b> faster than competing autoencoder baselines.
+          </p>
+        </div>
+        <div class="columns is-centered is-vcentered">
+          <div class="column">
+            <img src="./static/images/line_chart_ar.png"
+                 alt="AR training convergence comparison."
+                 style="width:100%; height:auto;"/>
+            <p class="has-text-centered"><b>AR</b></p>
+          </div>
+          <div class="column">
+            <img src="./static/images/line_chart_dit.png"
+                 alt="DiT training convergence comparison."
+                 style="width:100%; height:auto;"/>
+            <p class="has-text-centered"><b>DiT</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            © 2026 VideoRAE.
+            <a href="https://github.com/zhxie0117/VideoRAE">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
