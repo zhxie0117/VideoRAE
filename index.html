@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon.png?v=2">
   <link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg?v=2">
@@ -85,6 +87,15 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2607.14088"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
               <span class="link-block">
                 <a href="https://github.com/zhxie0117/VideoRAE"
                    class="external-link button is-normal is-rounded is-dark">
@@ -222,14 +233,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Video Examples</h2>
-        <div class="content has-text-justified">
-          <p class="has-text-centered">
-            Below we show class-to-video generation samples from our discrete AR model on UCF-101.
-          </p>
-        </div>
-
-        <h3 class="title is-4 has-text-centered subsection-title">Class-to-Video Generation</h3>
+        <h2 class="title is-3 has-text-centered">Class-to-Video Generation</h2>
         <div class="columns is-multiline is-centered video-example-grid">
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
             <div class="example-gen-card">
@@ -237,9 +241,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_04569_cls36.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 36</div>
               </div>
             </div>
           </div>
@@ -250,9 +251,6 @@
                   <source src="./static/videos/samples/sample_04602_cls19.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 19</div>
-              </div>
             </div>
           </div>
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
@@ -261,9 +259,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_07431_cls36.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 36</div>
               </div>
             </div>
           </div>
@@ -274,9 +269,6 @@
                   <source src="./static/videos/samples/sample_07497_cls1.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 1</div>
-              </div>
             </div>
           </div>
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
@@ -285,9 +277,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_07688_cls22.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 22</div>
               </div>
             </div>
           </div>
@@ -298,9 +287,6 @@
                   <source src="./static/videos/samples/sample_07705_cls62.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 62</div>
-              </div>
             </div>
           </div>
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
@@ -309,9 +295,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_08265_cls11.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 11</div>
               </div>
             </div>
           </div>
@@ -322,9 +305,6 @@
                   <source src="./static/videos/samples/sample_08556_cls1.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 1</div>
-              </div>
             </div>
           </div>
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
@@ -333,9 +313,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_08685_cls62.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 62</div>
               </div>
             </div>
           </div>
@@ -346,9 +323,6 @@
                   <source src="./static/videos/samples/sample_08699_cls0.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 0</div>
-              </div>
             </div>
           </div>
           <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
@@ -357,9 +331,6 @@
                 <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
                   <source src="./static/videos/samples/sample_08876_cls94.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 94</div>
               </div>
             </div>
           </div>
@@ -370,14 +341,61 @@
                   <source src="./static/videos/samples/sample_09996_cls99.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="example-gen-meta">
-                <div class="example-gen-label">Class 99</div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Reconstruction Results</h2>
+        <div class="columns is-centered is-variable is-5">
+          <div class="column">
+            <div class="result-figure-card">
+              <img src="./static/images/reconstruction_results_1.png" alt="Reconstruction results figure 1." class="result-figure-image"/>
+            </div>
+          </div>
+          <div class="column">
+            <div class="result-figure-card">
+              <img src="./static/images/reconstruction_results_2.png" alt="Reconstruction results figure 2." class="result-figure-image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Generation Results</h2>
+        <div class="result-figure-card result-figure-single">
+          <img src="./static/images/generation_results.png" alt="Generation results figure." class="result-figure-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="bibtex">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{xie2026videorae,
+  title={VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders},
+  author={Xie, Zhihao and Wu, Junfeng and Hu, Xinting and Huang, Junchao and Jiang, Li},
+  journal={arXiv preprint arXiv:2607.14088},
+  year={2026}
+}</code></pre>
   </div>
 </section>
 
