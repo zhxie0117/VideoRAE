@@ -29,7 +29,11 @@ On UCF-101, VideoRAE achieves state-of-the-art class-to-video **gFVD of 40 (AR)*
 
 - **2026-07** — Code and paper released ([arXiv:2607.14088](https://arxiv.org/abs/2607.14088)).
 
+## TODO
 
+- [x] Paper released
+- [x] VideoRAE checkpoints and code released
+- [ ] T2V generation code and checkpoints released
 
 ---
 
@@ -157,6 +161,8 @@ This codebase builds upon ideas and infrastructure from:
 - [VideoMAE v2](https://github.com/OpenGVLab/VideoMAEv2) — frozen video foundation encoder
 - [MAETok](https://github.com/Hhhhhhao/continuous_tokenizer) — 1d diffusion codebase
 - Related latent generative modeling efforts such as DiT / LlamaGen-style AR stacks
+
+We thank [江毅 (Yi Jiang)](https://enjoyyi.github.io/) for his personal guidance and support.
 
 ---
 
