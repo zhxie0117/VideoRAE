@@ -162,7 +162,7 @@ This codebase builds upon ideas and infrastructure from:
 - [MAETok](https://github.com/Hhhhhhao/continuous_tokenizer) — 1d diffusion codebase
 - Related latent generative modeling efforts such as DiT / LlamaGen-style AR stacks
 
-We thank [江毅 (Yi Jiang)](https://enjoyyi.github.io/) for his personal guidance and support.
+We thank [Yi Jiang](https://enjoyyi.github.io/) for his personal guidance and support.
 
 ---
 
