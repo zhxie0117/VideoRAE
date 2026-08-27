@@ -8,26 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VideoRAE</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans"
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=28">
   <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon.png?v=2">
   <link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg?v=2">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="./static/js/index.js?v=7"></script>
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar navbar-over-hero" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://zhxie0117.github.io/VideoRAE/">
+    <a class="navbar-item" href="#top">
       <img class="navbar-logo" src="./static/images/logo.png?v=2" alt="VideoRAE"/>
       <b>VideoRAE</b>
     </a>
@@ -39,6 +35,12 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#promo">Video</a>
+      <a class="navbar-item" href="#abstract">Abstract</a>
+      <a class="navbar-item" href="#method">Method</a>
+      <a class="navbar-item" href="#results">Results</a>
+      <a class="navbar-item" href="#class-to-video">Demos</a>
+      <a class="navbar-item" href="#bibtex">BibTeX</a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
@@ -50,211 +52,507 @@
         </div>
       </div>
     </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="navbar-cite" href="#bibtex">Cite the work <span aria-hidden="true">&#8599;</span></a>
+      </div>
+    </div>
   </div>
 </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-            <span class="title-heading">
-              <img class="title-logo" src="./static/images/logo.png?v=2" alt="VideoRAE"/>
-              <span class="title-brand">VideoRAE</span>
-            </span>
-            <span class="title-rest">: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders</span>
-          </h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Zhihao Xie<sup>1,2,*</sup>,</span>
-            <span class="author-block">Junfeng Wu<sup>2,*</sup>,</span>
-            <span class="author-block">Xinting Hu<sup>4</sup>,</span>
-            <span class="author-block">Junchao Huang<sup>1,3</sup>,</span>
-            <span class="author-block">Li Jiang<sup>1,3,&#8224;</sup></span>
-          </div>
+<section class="hero-wall" id="top" aria-labelledby="hero-title">
+  <div class="hero-wall-backdrop" aria-hidden="true">
+    <div class="hero-wall-grid">
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_00_106_train_nature.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_01_002_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_02_003_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_03_004_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_04_005_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_05_129_train_food_craft.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_06_010_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_07_011_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_08_014_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_09_015_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_10_016_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_11_017_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_12_019_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_13_024_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_14_025_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_15_029_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_16_039_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_17_041_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_18_043_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_19_085_train_animals.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_20_087_train_vehicles.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_21_001_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_22_007_sora_sora.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_23_227_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_24_236_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_25_237_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_26_240_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_27_241_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_28_254_custom_demo.mp4" type="video/mp4"></video></div>
+      <div class="hero-wall-cell"><video class="hero-wall-video" autoplay muted loop playsinline preload="auto"><source src="./static/videos/fengmian/cover_29_1.mp4" type="video/mp4"></video></div>
+    </div>
+    <div class="hero-wall-overlay"></div>
+    <div class="hero-wall-gridlines"></div>
+  </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong, Shenzhen,</span>
-            <span class="author-block"><sup>2</sup>Huazhong University of Science and Technology,</span>
-            <span class="author-block"><sup>3</sup>Shenzhen Loop Area Institute,</span>
-            <span class="author-block"><sup>4</sup>University of Science and Technology of China</span>
-          </div>
-          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
-            <span class="author-block"><sup>*</sup>Equal contribution.</span>
-            <span class="author-block"><sup>&#8224;</sup>Corresponding author.</span>
-          </div>
+  <div class="hero-wall-body">
+    <div class="hero-wall-content">
+      <p class="hero-wall-eyebrow">Research project / 2026</p>
+      <h1 id="hero-title" class="hero-wall-title">
+        <span class="hero-wall-brand-row">
+          <img class="title-logo" src="./static/images/logo.png?v=2" alt=""/>
+          <span class="hero-wall-brand">VideoRAE</span>
+        </span>
+        <span class="hero-wall-subtitle">Taming Video Foundation Models for Generative Modeling via Representation Autoencoders</span>
+      </h1>
+      <p class="hero-wall-lede">
+        Compact, generation-friendly video latents from frozen Video Foundation Models —
+        supporting both continuous DiT and discrete AR generators with faster convergence.
+      </p>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2607.14088"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://github.com/zhxie0117/VideoRAE"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
+      <div class="hero-wall-authorship">
+        <p class="hero-wall-authors">
+          <span>Zhihao Xie<sup>1,2,*</sup></span>,
+          <span>Junfeng Wu<sup>2,*</sup></span>,
+          <span>Xinting Hu<sup>4</sup></span>,
+          <span>Junchao Huang<sup>1,3</sup></span>,
+          <span>Li Jiang<sup>1,3,&#8224;</sup></span>
+        </p>
+        <p class="hero-wall-affiliations">
+          <span><sup>1</sup>CUHK-Shenzhen</span>
+          <span><sup>2</sup>HUST</span>
+          <span><sup>3</sup>Shenzhen Loop Area Institute</span>
+          <span><sup>4</sup>USTC</span>
+        </p>
+        <p class="hero-wall-notes">
+          <span><sup>*</sup>Equal contribution.</span>
+          <span><sup>&#8224;</sup>Corresponding author.</span>
+        </p>
+      </div>
+
+      <div class="hero-wall-actions">
+        <a class="hero-wall-btn hero-wall-btn-primary" href="#class-to-video">Explore demos <span aria-hidden="true">&#8595;</span></a>
+        <a class="hero-wall-btn" href="https://arxiv.org/abs/2607.14088" target="_blank" rel="noopener">arXiv <span aria-hidden="true">&#8599;</span></a>
+        <a class="hero-wall-btn" href="https://github.com/zhxie0117/VideoRAE" target="_blank" rel="noopener">Code <span aria-hidden="true">&#8599;</span></a>
+      </div>
+
+      <div class="hero-wall-signals">
+        <span><i></i>Text-to-video generation</span>
+        <span><i></i>5&times; faster convergence</span>
+        <span><i></i>Continuous &amp; discrete latents</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-wall-foot">
+    <span>Text-to-video samples playing live</span>
+    <a href="#promo">Scroll to explore <span aria-hidden="true">&#8595;</span></a>
+  </div>
+</section>
+
+
+<section class="section promo-band" id="promo">
+  <div class="container is-max-widescreen">
+    <div class="promo-heading has-text-centered">
+      <p class="abstract-eyebrow">Video</p>
+      <h2 class="section-title">Introducing VideoRAE</h2>
+      <p class="promo-lede">
+        An overview of the method, results, and video generation demos.
+      </p>
+    </div>
+    <figure class="promo-player">
+      <video class="promo-video" controls playsinline preload="metadata"
+             aria-label="VideoRAE project overview video">
+        <source src="./static/videos/promo/videorae-promo-en.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+</section>
+
+
+<section class="section abstract-band" id="abstract">
+  <div class="container is-max-widescreen">
+    <div class="abstract-layout">
+      <div class="abstract-side">
+        <p class="abstract-eyebrow">Abstract</p>
+        <h2 class="abstract-title">Compress frozen VFM features into compact continuous and discrete latents for video generation.</h2>
+        <div class="abstract-pills" aria-label="VideoRAE highlights">
+          <div class="abstract-pill">
+            <span class="abstract-pill-label">Backbones</span>
+            <div class="abstract-pill-chips">
+              <span>V-JEPA 2</span>
+              <span>V-JEPA 2.1</span>
+              <span>VideoMAEv2</span>
+            </div>
+          </div>
+          <div class="abstract-pill">
+            <span class="abstract-pill-label">Latent spaces</span>
+            <div class="abstract-pill-chips">
+              <span>Discrete</span>
+              <span>Continuous</span>
+            </div>
+          </div>
+          <div class="abstract-pill">
+            <span class="abstract-pill-label">Downstream</span>
+            <div class="abstract-pill-chips">
+              <span>Text-to-Video</span>
+              <span>Class-to-Video</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/teaser.png" alt="Overall architecture of VideoRAE." style="width:100%; height:auto;"/>
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        <b>Overall architecture of VideoRAE.</b>
-        A frozen VFM extracts multi-scale features, a 1D projector compresses them into compact latents
-        (continuous or discrete), and the decoder is trained with reconstruction and REPA alignment.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The rapid advancement of video generative modeling has been largely driven by
-            diffusion and autoregressive models operating in the latent spaces of 3D Variational Autoencoders (3D-VAEs).
-            However, conventional 3D-VAEs are mainly optimized for pixel-level reconstruction, and this objective often
-            limits the semantic and spatio-temporal structure captured by their latent spaces, constraining downstream
-            synthesis quality. Concurrently, Video Foundation Models (VFMs) such as V-JEPA 2 and VideoMAEv2 have
-            demonstrated exceptional semantic understanding capabilities. Yet, whether such frozen video foundation
-            representations can be transformed into compact, reconstruction-capable, and generation-friendly video
-            latents remains largely unexplored. In this work, we answer this question affirmatively with VideoRAE. VideoRAE
-            leverages multi-scale hierarchical features from a frozen video foundation encoder and employs a
-            lightweight 1D self-attention projector to compress them into a highly compact latent space. The resulting
-            latents support both continuous representations for Diffusion Transformers (DiTs) and discrete
-            representations for autoregressive models via multi-codebook high-dimensional quantization. During decoding,
-            VideoRAE incorporates a local-and-global representation alignment objective with the frozen VFM teacher,
-            which improves semantic preservation and enables training without KL regularization. Comprehensive experiments show that VideoRAE achieves strong reconstruction in both continuous and
-            discrete regimes. On UCF-101, it achieves state-of-the-art class-to-video gFVDs of 40 and 93 with AR and
-            DiT generators, respectively, while converging approximately 5&times; faster than competing autoencoder
-            baselines. In a controlled 2B-scale text-to-video experiment, replacing LTX-VAE with VideoRAE leads to
-            faster convergence and consistently better VBench performance. These results validate frozen VFM
-            representations as versatile and generation-friendly video latents. The model and code will be released.
-          </p>
-        </div>
+      <div class="abstract-copy content has-text-justified">
+        <p>
+          The rapid advancement of video generative modeling has been largely driven by
+          diffusion and autoregressive models operating in the latent spaces of 3D Variational Autoencoders (3D-VAEs).
+          However, conventional 3D-VAEs are mainly optimized for pixel-level reconstruction, and this objective often
+          limits the semantic and spatio-temporal structure captured by their latent spaces, constraining downstream
+          synthesis quality. Concurrently, Video Foundation Models (VFMs) such as V-JEPA 2 and VideoMAEv2 have
+          demonstrated exceptional semantic understanding capabilities. Yet, whether such frozen video foundation
+          representations can be transformed into compact, reconstruction-capable, and generation-friendly video
+          latents remains largely unexplored. In this work, we answer this question affirmatively with VideoRAE. VideoRAE
+          leverages multi-scale hierarchical features from a frozen video foundation encoder and employs a
+          lightweight 1D self-attention projector to compress them into a highly compact latent space. The resulting
+          latents support both continuous representations for Diffusion Transformers (DiTs) and discrete
+          representations for autoregressive models via multi-codebook high-dimensional quantization. During decoding,
+          VideoRAE incorporates a local-and-global representation alignment objective with the frozen VFM teacher,
+          which improves semantic preservation and enables training without KL regularization. Comprehensive experiments show that VideoRAE achieves strong reconstruction in both continuous and
+          discrete regimes. On UCF-101, it achieves state-of-the-art class-to-video gFVDs of 40 and 93 with AR and
+          DiT generators, respectively, while converging approximately 5&times; faster than competing autoencoder
+          baselines. In a controlled 2B-scale text-to-video experiment, replacing LTX-VAE with VideoRAE leads to
+          faster convergence and consistently better VBench performance. These results validate frozen VFM
+          representations as versatile and generation-friendly video latents. The model and code will be released.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Reconstruction Results</h2>
-        <div class="result-figure-stack">
-          <div class="result-figure-card">
-            <img src="./static/images/reconstruction_results_1.png" alt="Reconstruction results figure 1." class="result-figure-image"/>
-          </div>
-          <div class="result-figure-card">
-            <img src="./static/images/reconstruction_results_2.png" alt="Reconstruction results figure 2." class="result-figure-image"/>
-          </div>
-        </div>
-      </div>
+<section class="section method-band" id="method">
+  <div class="container is-max-widescreen">
+    <div class="method-heading">
+      <p class="abstract-eyebrow">Method</p>
+      <h2 class="section-title">How VideoRAE builds generation-ready latents.</h2>
+    </div>
+
+    <ol class="method-steps" aria-label="VideoRAE pipeline">
+      <li class="method-step">
+        <span class="method-step-index">01</span>
+        <h3 class="method-step-title">Frozen VFM features</h3>
+        <p class="method-step-copy">Extract multi-scale hierarchical features from a frozen video foundation encoder and fuse them.</p>
+      </li>
+      <li class="method-step">
+        <span class="method-step-index">02</span>
+        <h3 class="method-step-title">Compact latents</h3>
+        <p class="method-step-copy">Compress with a 1D self-attention projector into continuous DiT latents or discrete AR tokens.</p>
+      </li>
+      <li class="method-step">
+        <span class="method-step-index">03</span>
+        <h3 class="method-step-title">Align &amp; decode</h3>
+        <p class="method-step-copy">Align decoder features with the VFM teacher at local and global scales to preserve semantics.</p>
+      </li>
+    </ol>
+
+    <div class="method-figure">
+      <img src="./static/images/teaser.png" alt="Overall architecture of VideoRAE." class="method-figure-image"/>
+    </div>
+    <div class="method-copy content has-text-justified">
+      <p>
+        Given an input video, multi-scale hierarchical features are first extracted from a frozen VFM and fused,
+        followed by a 1D self-attention projector that dynamically compresses them into compact base tokens.
+        These tokens are then formatted into either a continuous latent space via linear projection for Diffusion Transformers,
+        or a discrete latent space via Multi-Codebook SimVQ for Autoregressive models.
+        Finally, during decoding, the Representation Alignment module explicitly aligns intermediate decoder features
+        with the VFM teacher at both local and global scales, intrinsically regularizing the semantic structure of the latent manifold.
+      </p>
     </div>
   </div>
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Generation Results</h2>
-        <div class="result-figure-card result-figure-single">
-          <img src="./static/images/generation_results.png" alt="Generation results figure." class="result-figure-image"/>
+<section class="section results-band" id="results">
+  <div class="container is-max-widescreen">
+    <div class="results-heading has-text-centered">
+      <p class="abstract-eyebrow" style="text-align:center;">Evaluation</p>
+      <h2 class="section-title">Experimental Results</h2>
+    </div>
+
+    <div class="key-highlights" aria-label="Key highlights">
+      <div class="key-highlight">
+        <p class="key-highlight-value">40</p>
+        <p class="key-highlight-label">AR gFVD on UCF-101</p>
+        <p class="key-highlight-note">State-of-the-art discrete generation</p>
+      </div>
+      <div class="key-highlight">
+        <p class="key-highlight-value">93</p>
+        <p class="key-highlight-label">DiT gFVD on UCF-101</p>
+        <p class="key-highlight-note">State-of-the-art continuous generation</p>
+      </div>
+      <div class="key-highlight">
+        <p class="key-highlight-value">5&times;</p>
+        <p class="key-highlight-label">Faster convergence</p>
+        <p class="key-highlight-note">vs. competing autoencoder baselines</p>
+      </div>
+    </div>
+
+    <div class="result-block">
+      <h3 class="title is-4 has-text-centered">Reconstruction</h3>
+      <p class="result-highlight">
+        VideoRAE delivers strong reconstruction in both continuous and discrete regimes, preserving fine spatial details
+        and temporal consistency under a highly compact latent budget.
+      </p>
+
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 1. Reconstruction performance of discrete tokenizers on UCF-101 and TokenBench.</p>
+        <div class="result-legend" aria-label="Row color legend">
+          <span><i class="swatch-green"></i> VideoRAE (VideoMAEv2)</span>
+          <span><i class="swatch-blue"></i> VideoRAE (V-JEPA 2)</span>
+          <span><i class="swatch-gold"></i> VideoRAE (V-JEPA 2.1)</span>
+        </div>
+        <div class="table-scroll">
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th rowspan="2">#rToken</th>
+                <th colspan="3">UCF-101</th>
+                <th colspan="3">TokenBench-256&times;256</th>
+              </tr>
+              <tr>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-row"><td colspan="8"><em>AR generative models with discrete video tokenizers</em></td></tr>
+              <tr>
+                <td>TATS</td><td>1024</td><td>&mdash;</td><td>&mdash;</td><td>162</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td>
+              </tr>
+              <tr>
+                <td>OmniTokenizer</td><td>5120</td><td>29.25</td><td>0.11</td><td>28</td><td>25.55</td><td>0.11</td><td>44</td>
+              </tr>
+              <tr>
+                <td>LARP-L-Long</td><td>1024</td><td>27.88</td><td>0.12</td><td>35</td><td>28.65</td><td>0.11</td><td>45</td>
+              </tr>
+              <tr>
+                <td>SweetTok</td><td>1280</td><td>29.27</td><td><b>0.07</b></td><td>20</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td>
+              </tr>
+              <tr class="ours-green">
+                <td>VideoRAE (VideoMAEv2)</td><td>1024</td><td><b>29.94</b></td><td><u>0.10</u></td><td><u>16</u></td><td><b>30.69</b></td><td><b>0.09</b></td><td><u>33</u></td>
+              </tr>
+              <tr class="ours-blue">
+                <td>VideoRAE (V-JEPA 2)</td><td>1024</td><td><u>29.39</u></td><td><u>0.10</u></td><td><b>13</b></td><td><u>29.93</u></td><td><u>0.10</u></td><td><b>28</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 2. Reconstruction performance of continuous autoencoders on UCF-101 and TokenBench.</p>
+        <div class="table-scroll">
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th rowspan="2">Config</th>
+                <th colspan="3">UCF-101</th>
+                <th colspan="3">TokenBench-256&times;256</th>
+              </tr>
+              <tr>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-row"><td colspan="8"><em>Diffusion generative models with continuous video tokenizers</em></td></tr>
+              <tr><td>CV-VAE</td><td>4096&times;4</td><td>30.11</td><td>0.12</td><td>57</td><td>30.80</td><td>0.11</td><td>61</td></tr>
+              <tr><td>LTX-VAE</td><td>128&times;128</td><td><b>32.02</b></td><td>0.10</td><td>35</td><td><b>33.74</b></td><td><b>0.08</b></td><td>32</td></tr>
+              <tr><td>LTX2</td><td>128&times;128</td><td>28.88</td><td>0.12</td><td>15</td><td>29.36</td><td>0.11</td><td>36</td></tr>
+              <tr><td>LeanVAE</td><td>4096&times;4</td><td>30.99</td><td>0.11</td><td><b>10</b></td><td>31.79</td><td>0.10</td><td><b>23</b></td></tr>
+              <tr class="ours-green"><td>VideoRAE (VideoMAEv2)</td><td>512&times;32</td><td><u>31.23</u></td><td><b>0.08</b></td><td>13</td><td><u>32.06</u></td><td><b>0.08</b></td><td><u>25</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE (V-JEPA 2)</td><td>512&times;32</td><td>30.40</td><td><u>0.09</u></td><td><u>14</u></td><td>31.19</td><td><u>0.09</u></td><td><u>25</u></td></tr>
+              <tr class="spacer-row"><td colspan="8"></td></tr>
+              <tr><td>CogVideoX-VAE</td><td>4096&times;16</td><td><b>36.22</b></td><td><b>0.05</b></td><td>7</td><td>36.35</td><td><b>0.04</b></td><td>9</td></tr>
+              <tr><td>WAN2.1-VAE</td><td>4096&times;16</td><td>35.70</td><td><b>0.05</b></td><td><b>4</b></td><td><b>37.02</b></td><td><b>0.04</b></td><td><b>6</b></td></tr>
+              <tr class="ours-green"><td>VideoRAE (VideoMAEv2)</td><td>1024&times;64</td><td>33.64</td><td><u>0.06</u></td><td><u>5</u></td><td>34.25</td><td><u>0.07</u></td><td><u>11</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE (V-JEPA 2)</td><td>1024&times;64</td><td>32.14</td><td>0.07</td><td>7</td><td>32.56</td><td>0.08</td><td>13</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 3. Reconstruction performance of 3D projector variants on UCF-101 and TokenBench.</p>
+        <div class="table-scroll">
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th rowspan="2">Config</th>
+                <th colspan="3">UCF-101</th>
+                <th colspan="3">TokenBench-256&times;256</th>
+              </tr>
+              <tr>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+                <th>PSNR&uarr;</th><th>LPIPS&darr;</th><th>rFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ours-green"><td>VideoRAE-3d (VideoMAEv2)</td><td>1024&times;64</td><td>33.50</td><td><u>0.06</u></td><td><u>5</u></td><td>34.07</td><td><u>0.07</u></td><td><u>12</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE-3d (V-JEPA 2)</td><td>1024&times;64</td><td>31.91</td><td>0.07</td><td>7</td><td>32.48</td><td>0.08</td><td>15</td></tr>
+              <tr class="ours-gold"><td>VideoRAE-3d (V-JEPA 2.1)</td><td>1024&times;64</td><td>31.88</td><td>0.07</td><td>7</td><td>32.19</td><td>0.07</td><td>16</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
+    <div class="result-block">
+      <h3 class="title is-4 has-text-centered">Generation</h3>
+      <p class="result-highlight">
+        On UCF-101 class-to-video generation, VideoRAE reaches state-of-the-art gFVDs of <b>40</b> (AR) and <b>93</b> (DiT),
+        outperforming competing autoencoder baselines under matched generator settings.
+      </p>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Training Convergence</h2>
-        <div class="content has-text-justified">
-          <p>
-            Training convergence speed comparison in AR (left) and DiT (right) generative modeling.
-            VideoRAE converges approximately <b>5&times;</b> faster than competing autoencoder baselines.
-          </p>
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 4. Class-conditional generation evaluation (Discrete AR) on UCF-101, evaluated on 10K generated samples.</p>
+        <div class="table-scroll">
+          <table class="result-table result-table-compact">
+            <thead>
+              <tr>
+                <th>Tokenizer</th>
+                <th>Resolution</th>
+                <th>#Tokens</th>
+                <th>#Params</th>
+                <th>gFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>CogVideo (Hong et al., 2022)</td><td>256&times;256</td><td>6800</td><td>9.4B</td><td>626</td></tr>
+              <tr><td>TATS (Ge et al., 2022)</td><td>256&times;256</td><td>4096</td><td>321M</td><td>332</td></tr>
+              <tr><td>Video-LaVIT (Jin et al., 2024)</td><td>256&times;256</td><td>512</td><td>7B</td><td>280</td></tr>
+              <tr><td>OmniTokenizer (Wang et al., 2024b)</td><td>256&times;256</td><td>5120</td><td>650M</td><td>191</td></tr>
+              <tr><td>LARP-L (Wang et al., 2024a)</td><td>256&times;256</td><td>1024</td><td>632M</td><td>99</td></tr>
+              <tr><td>SweetTok (Tan et al., 2025)</td><td>256&times;256</td><td>1280</td><td>650M</td><td>84</td></tr>
+              <tr><td>SweetTok (Tan et al., 2025)</td><td>256&times;256</td><td>1280</td><td>1.9B</td><td>65</td></tr>
+              <tr class="ours-green"><td>VideoRAE (VideoMAEv2)</td><td>224&times;224</td><td>1024</td><td>1.3B</td><td><u>45</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE (V-JEPA 2)</td><td>256&times;256</td><td>1024</td><td>1.3B</td><td><b>40</b></td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="columns is-centered is-vcentered">
-          <div class="column">
-            <img src="./static/images/line_chart_ar.png"
-                 alt="AR training convergence comparison."
-                 style="width:100%; height:auto;"/>
-            <p class="has-text-centered"><b>AR</b></p>
-          </div>
-          <div class="column">
-            <img src="./static/images/line_chart_dit.png"
-                 alt="DiT training convergence comparison."
-                 style="width:100%; height:auto;"/>
-            <p class="has-text-centered"><b>DiT</b></p>
-          </div>
+      </div>
+
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 5. Class-conditional generation evaluation (Continuous DiT) on UCF-101, evaluated on 2K generated samples.</p>
+        <div class="table-scroll">
+          <table class="result-table result-table-compact">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Resolution</th>
+                <th>Configs</th>
+                <th>gFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Latte (Ma et al., 2024)</td><td>256&times;256</td><td>4096&times;4</td><td>478</td></tr>
+              <tr><td>LeanVAE (Cheng &amp; Yuan, 2025)</td><td>256&times;256</td><td>4096&times;4</td><td>164</td></tr>
+              <tr><td>LTX-VAE (HaCohen et al., 2024)</td><td>256&times;256</td><td>128&times;128</td><td>161</td></tr>
+              <tr class="ours-green"><td>VideoRAE (VideoMAEv2)</td><td>224&times;224</td><td>512&times;32</td><td><u>99</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE (V-JEPA 2)</td><td>256&times;256</td><td>512&times;32</td><td><b>93</b></td></tr>
+              <tr class="spacer-row"><td colspan="4"></td></tr>
+              <tr><td>WF-VAE (Li et al., 2025)</td><td>256&times;256</td><td>4096&times;16</td><td>371</td></tr>
+              <tr><td>LeanVAE (Cheng &amp; Yuan, 2025)</td><td>256&times;256</td><td>4096&times;16</td><td>175</td></tr>
+              <tr><td>DeCo-VAE (Yin et al., 2025)</td><td>256&times;256</td><td>4096&times;16</td><td>166</td></tr>
+              <tr><td>CogVideoX-VAE (Yang et al., 2025)</td><td>256&times;256</td><td>4096&times;16</td><td>151</td></tr>
+              <tr><td>WAN2.1-VAE (Wan et al., 2025)</td><td>256&times;256</td><td>4096&times;16</td><td>126</td></tr>
+              <tr class="ours-green"><td>VideoRAE (VideoMAEv2)</td><td>224&times;224</td><td>1024&times;64</td><td><u>103</u></td></tr>
+              <tr class="ours-blue"><td>VideoRAE (V-JEPA 2)</td><td>256&times;256</td><td>1024&times;64</td><td><b>94</b></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="result-table-block">
+        <p class="result-table-caption">Table 6. Class-conditional generation evaluation (3D projector variants) on UCF-101, evaluated on 2K generated samples.</p>
+        <div class="table-scroll">
+          <table class="result-table result-table-compact">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Resolution</th>
+                <th>Configs</th>
+                <th>gFVD&darr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ours-green"><td>VideoRAE-3d (VideoMAEv2)</td><td>224&times;224</td><td>1024&times;64</td><td>104</td></tr>
+              <tr class="ours-blue"><td>VideoRAE-3d (V-JEPA 2)</td><td>256&times;256</td><td>1024&times;64</td><td>96</td></tr>
+              <tr class="ours-gold"><td>VideoRAE-3d (V-JEPA 2.1)</td><td>256&times;256</td><td>1024&times;64</td><td><b>93</b></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">VBench Convergence</h2>
-        <div class="content has-text-justified">
-          <p>
-            Convergence comparison between VideoRAE and LTX-VAE on VBench.
-          </p>
+    <div class="result-block">
+      <h3 class="title is-4 has-text-centered">Class-to-Video Convergence</h3>
+      <p class="result-highlight">
+        VideoRAE converges approximately <b>5&times;</b> faster than LTX-Video on class-to-video generation,
+        matching baseline quality in far fewer training epochs for both AR and DiT settings.
+      </p>
+      <div class="columns is-centered is-vcentered chart-grid">
+        <div class="column">
+          <figure class="chart-card">
+            <img src="./static/images/c2v_convergence_2.png?v=2"
+                 alt="Class-to-video AR convergence comparison."/>
+            <figcaption>AR</figcaption>
+          </figure>
         </div>
-        <div class="columns is-centered is-vcentered">
-          <div class="column">
+        <div class="column">
+          <figure class="chart-card">
+            <img src="./static/images/c2v_convergence_1.png?v=2"
+                 alt="Class-to-video DiT convergence comparison."/>
+            <figcaption>DiT</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-block">
+      <h3 class="title is-4 has-text-centered">Text-to-Video Convergence (VBench)</h3>
+      <p class="result-highlight">
+        In a controlled 2B-scale text-to-video setting, replacing LTX-VAE with VideoRAE yields faster convergence
+        and consistently higher VBench semantic, quality, and total scores.
+      </p>
+      <div class="columns is-centered is-vcentered chart-grid">
+        <div class="column">
+          <figure class="chart-card">
             <img src="./static/images/semantic_score.png"
-                 alt="VBench semantic score convergence."
-                 style="width:100%; height:auto;"/>
-            <p class="has-text-centered"><b>Semantic Score</b></p>
-          </div>
-          <div class="column">
+                 alt="VBench semantic score convergence."/>
+            <figcaption>Semantic Score</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="chart-card">
             <img src="./static/images/quality_score.png"
-                 alt="VBench quality score convergence."
-                 style="width:100%; height:auto;"/>
-            <p class="has-text-centered"><b>Quality Score</b></p>
-          </div>
-          <div class="column">
+                 alt="VBench quality score convergence."/>
+            <figcaption>Quality Score</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="chart-card">
             <img src="./static/images/total_score.png"
-                 alt="VBench total score convergence."
-                 style="width:100%; height:auto;"/>
-            <p class="has-text-centered"><b>Total Score</b></p>
-          </div>
+                 alt="VBench total score convergence."/>
+            <figcaption>Total Score</figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -262,136 +560,83 @@
 </section>
 
 
-<section class="section" id="video-examples">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Class-to-Video Generation</h2>
-        <div class="columns is-multiline is-centered video-example-grid">
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_04569_cls36.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_04602_cls19.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_07431_cls36.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_07497_cls1.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_07688_cls22.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_07705_cls62.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_08265_cls11.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_08556_cls1.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_08685_cls62.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_08699_cls0.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_08876_cls94.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half-mobile is-one-third-tablet is-3-desktop">
-            <div class="example-gen-card">
-              <div class="example-gen-media">
-                <video class="example-gen-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="./static/videos/samples/sample_09996_cls99.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="section demos-band demos-band-alt" id="class-to-video">
+  <div class="container is-max-widescreen">
+    <p class="hero-wall-eyebrow" style="text-align:center; color: rgba(255,245,241,0.55);">Visual showcase</p>
+    <h2 class="title is-3 has-text-centered">Class-to-Video Generation</h2>
+    <div class="demo-gallery demo-gallery-c2v">
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_04569_cls36.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_04602_cls19.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_07431_cls36.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_07497_cls1.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_07688_cls22.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_07705_cls62.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_08265_cls11.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_08556_cls1.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_08685_cls62.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_08699_cls0.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_08876_cls94.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/samples/sample_09996_cls99.mp4" type="video/mp4"></video></div></div>
     </div>
   </div>
 </section>
 
 
-<section class="section" id="bibtex">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{xie2026videorae,
+<section class="section demos-band" id="video-examples">
+  <div class="container is-max-widescreen">
+    <p class="hero-wall-eyebrow" style="text-align:center; color: rgba(255,245,241,0.55);">Visual showcase</p>
+    <h2 class="title is-3 has-text-centered">Text-to-Video Generation</h2>
+    <div class="demo-gallery">
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_00_013_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_01_026_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_02_028_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_03_030_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_04_038_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_05_045_sora_sora.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_06_063_train_human_action.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_07_079_train_animals.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_08_122_train_food_craft.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_09_134_train_camera_landscape.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_10_135_train_camera_landscape.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_11_136_train_camera_landscape.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_12_143_train_camera_landscape.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_13_146_train_camera_landscape.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_14_172_train_daily_life.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_15_192_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_16_200_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_17_201_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_18_204_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_19_206_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_20_208_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_21_210_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_22_211_custom_demo.mp4" type="video/mp4"></video></div></div>
+      <div class="demo-gallery-card"><div class="demo-gallery-frame"><video class="example-gen-video" autoplay muted loop playsinline preload="metadata"><source src="./static/videos/t2v/t2v_23_226_custom_demo.mp4" type="video/mp4"></video></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section citation-band" id="bibtex">
+  <div class="container is-max-widescreen">
+    <div class="citation-layout">
+      <div>
+        <p class="abstract-eyebrow">Citation</p>
+        <h2 class="abstract-title" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">BibTeX</h2>
+        <p class="citation-note">If you find this work useful, please consider citing VideoRAE.</p>
+      </div>
+      <div class="bibtex-box">
+        <div class="bibtex-head">
+          <span>BibTeX</span>
+          <button type="button" id="copy-bibtex">Copy</button>
+        </div>
+        <pre id="bibtex-code"><code>@article{xie2026videorae,
   title={VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders},
   author={Xie, Zhihao and Wu, Junfeng and Hu, Xinting and Huang, Junchao and Jiang, Li},
   journal={arXiv preprint arXiv:2607.14088},
   year={2026}
 }</code></pre>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -402,10 +647,8 @@
       <div class="column is-8">
         <div class="content has-text-centered">
           <p>
-            This page was built using the
-            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>
-            which was adopted from the
-            <a href="https://nerfies.github.io">Nerfies</a>
+            This page was inspired by the
+            <a href="https://echo-team-joy-future-academy-jd.github.io/Echo-1.5-Page/wm">Echo Team</a>
             project page.
             This website is licensed under a
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
