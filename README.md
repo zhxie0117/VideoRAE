@@ -10,6 +10,10 @@
 </div>
 
 <p align="center">
+  <img src="assets/VideoRAE_paper_cover_16x9.png" width="95%">
+</p>
+
+<p align="center">
   <img src="assets/newppl.png" width="95%">
 </p>
 <p align="center"><em>Overall architecture of VideoRAE.</em></p>
@@ -21,7 +25,26 @@
 - supports both **continuous latents** (for DiT) and **discrete tokens** (for AR via Multi-Codebook SimVQ);
 - regularizes the latent manifold with **local-and-global Representation Alignment (REPA)**, enabling training **without KL loss**.
 
-On UCF-101, VideoRAE achieves state-of-the-art class-to-video **gFVD of 40 (AR)** and **93 (DiT)**, while converging roughly **5× faster** than competing autoencoder baselines.
+On UCF-101, VideoRAE achieves state-of-the-art class-to-video **gFVD of 40 (AR)** and **93 (DiT)**, while converging roughly **5× faster** than competing autoencoder baselines. See the [project page](https://zhxie0117.github.io/VideoRAE/) for video demos and full results.
+
+### Convergence
+
+<table align="center">
+  <tr>
+    <td width="50%" align="center"><img src="assets/c2v_convergence_2.png" width="100%"></td>
+    <td width="50%" align="center"><img src="assets/c2v_convergence_1.png" width="100%"></td>
+  </tr>
+</table>
+<p align="center"><em>Class-to-video generation: AR (left) and DiT (right).</em></p>
+
+<table align="center">
+  <tr>
+    <td width="33%" align="center"><img src="assets/semantic_score.png" width="100%"></td>
+    <td width="33%" align="center"><img src="assets/quality_score.png" width="100%"></td>
+    <td width="33%" align="center"><img src="assets/total_score.png" width="100%"></td>
+  </tr>
+</table>
+<p align="center"><em>Text-to-video VBench scores (2B-scale setting): semantic, quality, and total.</em></p>
 
 ---
 
@@ -148,7 +171,7 @@ bash scripts/train_ar_vjepa.sh
 
 ## Pretrained Models
 
-Pretrained VideoRAE weights are released on [HuggingFace](https://huggingface.co/siuuuuuuxzh/videorae/tree/main).
+Pretrained VideoRAE weights are available on [Hugging Face](https://huggingface.co/siuuuuuuxzh/videorae) and [ModelScope](https://www.modelscope.cn/models/siuuuuuuuuuuxzh/videorae).
 
 ---
 
